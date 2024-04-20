@@ -1,4 +1,6 @@
 Real Estate Management Website
+
+
 This is a real estate management website built using HTML, CSS, and JavaScript. It serves as a platform for users to search for properties, view property details, and manage their real estate listings.
 
 Table of Contents
@@ -8,6 +10,8 @@ Usage
 Contributing
 License
 Features
+
+
 Property Search: Users can search for properties based on various criteria such as location, price range, size, etc.
 Property Listings: Detailed listings of properties including images, descriptions, amenities, and contact information.
 User Authentication: Secure user authentication system allowing users to sign up, log in, and manage their account.
