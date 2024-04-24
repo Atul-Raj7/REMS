@@ -219,8 +219,9 @@ header .icons #menu-bars{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     overflow: hidden;
-     background: #fff;
-     flex: 1 1 30;
+    background: #fff;
+    flex: 1 1 30;
+    width: 40.5rem;
 }
 
 .featured .box-container .box .image-container{
