@@ -59,6 +59,7 @@ section{
     color: #333;
     font-size: 4rem;
     padding-bottom: 3rem;
+    position: relative;
 }
 
 .heading span{
@@ -130,7 +131,7 @@ header .icons #menu-bars{
     background:url(../images/bgn.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +178,7 @@ header .icons #menu-bars{
     font-size: 1.5rem;
     padding: 1rem;
     text-transform: none;
+    text-align: center;
 }
 
 .home form .btn{
@@ -207,11 +209,55 @@ header .icons #menu-bars{
     line-height: 2;
 }
 
+.featured{
+    min-height: 100vh;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position:center;
+    transition: 2s;
+    transition-delay: 1s;
+
+    animation: fadeAnimation 30s infinite ;
+    /* animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 10s; */
+}
+
+@keyframes fadeAnimation {
+        0% {
+            background-image: url('../images/bg4.jpg');
+        }
+
+        25% {
+            background-image: url('https://r4.wallpaperflare.com/wallpaper/262/277/207/vancouver-sunset-city-landscape-wallpaper-8c6cf37ba8562cc517f490814df8246e.jpg');
+        }
+
+        50% {
+          
+            background-image: url('../images/bg3.jpg');
+        }
+
+        100% {
+            background-image: url('../images/bg2.jpg');
+        }
+}
 
 .featured .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    position: relative;
 }
 
 .featured .box-container .box{
@@ -510,7 +556,7 @@ header .icons #menu-bars{
     color: #333;
     background: #f7f7f7;
     border-radius: .5rem;
-    text-transform: none;
+    text-transform: capitalize;
     width: 49%;
 }
 
@@ -525,19 +571,60 @@ header .icons #menu-bars{
     background-color: var(--light-red);
 }
 
+.contact .row form input{
+    display: grid;
+    place-items: center;
+}
 
+.footer .footer-container{
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+}
 
+.footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.footer .footer-container .box-container .box{
+    flex: 1 1 25rem;
+}
 
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color: #333;
+    padding: .5rem 0;
+}
 
+.footer .footer-container .box-container .box a{
+    font-size: 1.5rem;
+    color: #666;
+    padding: .5rem 0;
+    display: block;
+}
 
+.footer .footer-container .box-container .box a:hover{
+    color: var(--red);
+    text-decoration: underline;
+}
 
+.footer .footer-container .credit{
+    margin-top: 2rem;
+    padding: .5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
 
-
-
-
-
-
+.footer .footer-container .credit span{
+    color: var(--red);
+}
 
 
 
